@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'profile',
-    '__version' => '0.1.1',
+    '__version' => '0.2.0',
     '__git' => 'git@github.com:getmim/profile.git',
     '__license' => 'MIT',
     '__author' => [
@@ -57,6 +57,9 @@ return [
                     'format' => 'user'
                 ],
                 'avatar' => [
+                    'type' => 'media'
+                ],
+                'cover' => [
                     'type' => 'media'
                 ],
                 'name' => [

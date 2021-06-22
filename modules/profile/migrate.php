@@ -59,17 +59,22 @@ return [
                 'length' => 250,
                 'index' => 7000
             ],
+            'cover' => [
+                'type' => 'VARCHAR',
+                'length' => 250,
+                'index' => 8000
+            ],
             'bdate' => [
                 'type' => 'DATE',
                 'attrs' => [
                     'null' => TRUE
                 ],
-                'index' => 8000
+                'index' => 9000
             ],
             'bplace' => [
                 'type' => 'VARCHAR',
                 'length' => 100,
-                'index' => 9000
+                'index' => 10000
             ],
             'gender' => [
                 'comment' => '0 Unknown, 1 Male, 2 Female',
@@ -78,7 +83,7 @@ return [
                     'unsigned' => TRUE,
                     'null' => FALSE
                 ],
-                'index' => 10000
+                'index' => 11000
             ],
             'height' => [
                 'comment' => 'In cm',
@@ -86,7 +91,7 @@ return [
                 'attrs' => [
                     'unsigned' => TRUE
                 ],
-                'index' => 11000
+                'index' => 12000
             ],
             'weight' => [
                 'comment' => 'In kg',
@@ -94,57 +99,57 @@ return [
                 'attrs' => [
                     'unsigned' => TRUE
                 ],
-                'index' => 12000
+                'index' => 13000
             ],
             'skin' => [
                 'type' => 'VARCHAR',
                 'length' => 100,
-                'index' => 13000
+                'index' => 14000
             ],
             'biography' => [
                 'type' => 'TEXT',
-                'index' => 14000
+                'index' => 15000
             ],
             'educations' => [
                 'comment' => '[{"level":"S1","year":YYYY,"place":"..."},...]',
                 'type' => 'TEXT',
-                'index' => 15000
+                'index' => 16000
             ],
             'profession' => [
                 'comment' => '[{"type":"...","since":YYYY},...]',
                 'type' => 'TEXT',
-                'index' => 16000
+                'index' => 17000
             ],
             'contact' => [
                 'comment' => '{"phone":"...","email":"...",...}',
                 'type' => 'TEXT',
-                'index' => 17000
+                'index' => 18000
             ],
             'socials' => [
                 'comment' => '[{"type":"facebook","url":"..."},...]',
                 'type' => 'TEXT',
-                'index' => 18000
+                'index' => 19000
             ],
 
             'addr_country' => [
                 'type' => 'VARCHAR',
                 'length' => 100,
-                'index' => 19000
+                'index' => 20000
             ],
             'addr_state' => [
                 'type' => 'VARCHAR',
                 'length' => 100,
-                'index' => 20000
+                'index' => 21000
             ],
             'addr_city' => [
                 'type' => 'VARCHAR',
                 'length' => 100,
-                'index' => 21000
+                'index' => 22000
             ],
             'addr_street' => [
                 'type' => 'VARCHAR',
                 'length' => 100,
-                'index' => 22000
+                'index' => 23000
             ],
 
             'updated' => [
@@ -153,14 +158,14 @@ return [
                     'default' => 'CURRENT_TIMESTAMP',
                     'update' => 'CURRENT_TIMESTAMP'
                 ],
-                'index' => 23000
+                'index' => 24000
             ],
             'created' => [
                 'type' => 'TIMESTAMP',
                 'attrs' => [
                     'default' => 'CURRENT_TIMESTAMP'
                 ],
-                'index' => 24000
+                'index' => 25000
             ]
         ]
     ]
